@@ -40,6 +40,14 @@ class statusCommand extends commando.Command {
                     .setFooter("Sorix Bot [] Created by hieu#0843")
                     .setThumbnail("https://cdn.discordapp.com/attachments/543003685676908544/561764845188546590/image0-1.jpg")})
             }
+            else{
+                 message.channel.send({embed: new Discord.RichEmbed()
+                    .setTitle("**Sorix [] Server Status**")
+                    .setColor("#4286f4")
+                    .addField("The SorixPvP network is currently online with,", `${body.players.now} people playing`)
+                    .setTimestamp()
+                    .setFooter("Sorix Bot [] Created by hieu#0843")
+                    .setThumbnail("https://cdn.discordapp.com/attachments/543003685676908544/561764845188546590/image0-1.jpg")})}
         })
     }
 }
