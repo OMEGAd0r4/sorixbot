@@ -29,7 +29,7 @@ class statusCommand extends commando.Command {
 
             body = JSON.parse(body);
           
-            var status = `The VoltPvP Network is currently offline`;
+            var status = `The SorixPvP Network is currently offline`;
 
             if(body.players.now){
                 message.channel.send({embed: new Discord.RichEmbed()
