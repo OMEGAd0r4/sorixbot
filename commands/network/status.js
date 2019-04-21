@@ -20,7 +20,7 @@ class statusCommand extends commando.Command {
     {
         //npm install request --save
         var request = require("request");
-        var mcIP = "play.sorixpvp.com";
+        var mcIP = "trexic.org";
         var mcPort = "";
 
         var url = "http://mcapi.us/server/status?ip=" + mcIP + "&port" + mcPort;
@@ -29,25 +29,25 @@ class statusCommand extends commando.Command {
 
             body = JSON.parse(body);
           
-            var status = `The SorixPvP Network is currently offline`;
+            var status = `The Treix Network is currently offline`;
 
             if(body.players.now){
                 message.channel.send({embed: new Discord.RichEmbed()
-                    .setTitle("**Sorix [] Server Status**")
+                    .setTitle("**Trexic [] Server Status**")
                     .setColor("#4286f4")
-                    .addField("The SorixPvP network is currently online with,", `${body.players.now} people playing`)
+                    .addField("The Trexic network is currently online with,", `${body.players.now} people playing`)
                     .setTimestamp()
                     .setFooter("Sorix Bot [] Created by hieu#0843")
-                    .setThumbnail("https://cdn.discordapp.com/attachments/543003685676908544/561764845188546590/image0-1.jpg")})
+                    .setThumbnail("https://cdn.discordapp.com/attachments/543003685676908544/564930926023278602/Logo-1.png")})
             }
             else{
                  message.channel.send({embed: new Discord.RichEmbed()
-                    .setTitle("**Sorix [] Server Status**")
+                    .setTitle("**Trexic [] Server Status**")
                     .setColor("#4286f4")
-                    .addField("The SorixPvP network is currently online with,", `${body.players.now} people playing`)
+                    .addField("The Trexic network is currently online with,", `${body.players.now} people playing`)
                     .setTimestamp()
-                    .setFooter("Sorix Bot [] Created by hieu#0843")
-                    .setThumbnail("https://cdn.discordapp.com/attachments/543003685676908544/561764845188546590/image0-1.jpg")})}
+                    .setFooter("Trexic Bot [] Created by hieu#0843")
+                    .setThumbnail("https://cdn.discordapp.com/attachments/543003685676908544/564930926023278602/Logo-1.png")})}
         })
     }
 }
