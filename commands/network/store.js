@@ -19,7 +19,7 @@ class storeCommand extends commando.Command {
   async run(message)
   {
     message.channel.send({embed: new Discord.RichEmbed()
-        .setTitle("**trexic [] Store**")
+        .setTitle("**Trexic [] Store**")
         .setColor("#4286f4")
         .setDescription("The store of the **Trexic Network** is **http://store.trexic.org/**")
         .setTimestamp()
