@@ -19,9 +19,9 @@ class storeCommand extends commando.Command {
   async run(message)
   {
     message.channel.send({embed: new Discord.RichEmbed()
-        .setTitle("**SorixPvP [] Store**")
+        .setTitle("**trexic [] Store**")
         .setColor("#4286f4")
-        .setDescription("The store of the **SorixPvP Network** is **http://sorixpvp.craftingstore.net/**")
+        .setDescription("The store of the **Trexic Network** is **http://store.trexic.org/**")
         .setTimestamp()
         .setImage("https://cdn.discordapp.com/attachments/543003685676908544/561764845188546590/image0-1.jpg")
         .setFooter("Sorix Bot [] Created by hieu#0843")})
